@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="unsemantic-grid-responsive-no-ie7.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <h1>INTERACTIVE PHOTO GALLERY</h1>
+      <hr id="line" />
+      <br />
+      <div class="grid-100 mobile-grid-100">
+        <p>Select Your Favorite Image Genre:</p>
+        <br />
+        <form>
+          <input type="radio" name="genre" id="radioButton" value="computer" />
+          Computer
+          <input type="radio" name="genre" id="radioButton" value="animals" />
+          Animals
+          <input type="radio" name="genre" id="radioButton" value="nature" />
+          Nature
+          <input type="radio" name="genre" id="radioButton" value="city" />
+          City
+        </form>
+        <div id="box"></div>
+        <button id="check-value">Submit</button>
+        <div id="btn-reset"><button id="reset">Reset</button></div>
+      </div>
+      <br />
+      <div class="grid-100 mobile-grid-100">
+        <div class="grid-25 mobile-grid-100">
+          <figure>
+            <img
+              class="images"
+              id="computer"
+              src="assets/albert-stoynov-dyUp7WPu5q4-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img
+              class="images pad-width"
+              id="nature"
+              src="assets\henry-be-IicyiaPYGGI-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <div class="grid-25 mobile-grid-100">
+          <figure>
+            <img
+              class="images"
+              id="animals"
+              src="assets\daniel-octavian-Wzj7rBxxMaw-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <div class="grid-25 mobile-grid-100">
+          <figure>
+            <img
+              class="images"
+              id="animals"
+              src="assets\davide-ragusa-cDwZ40Lj9eo-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img
+              class="images pad-width"
+              id="computer"
+              src="assets\igor-shalyminov-uob33Quh9bY-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <div class="grid-25 mobile-grid-100">
+          <figure>
+            <img
+              class="images"
+              id="animals"
+              src="assets\eric-ward-qFAEHxevxVE-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img
+              class="images pad-width"
+              id="computer"
+              src="assets\igor-shalyminov-wR4Q9r7KWBU-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-100 mobile-grid-100">
+        <div class="grid-25 mobile-grid-100">
+          <figure>
+            <img
+              class="images"
+              id="animals"
+              src="assets\eric-welch-XucH5JNRFig-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+          <figure>
+            <img
+              class="images pad-width"
+              id="nature"
+              src="assets\jeremy-bishop-EwKXn5CapA4-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <div class="grid-25 mobile-grid-100">
+          <figure>
+            <img
+              class="images"
+              id="city"
+              src="assets\fons-heijnsbroek-5ueJXVcIED8-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="images pad-width"
+              id="animals"
+              src="assets\joel-herzog-ny_5l4QKBnE-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+        <div class="grid-50 mobile-grid-100">
+          <figure>
+            <img
+              class="images"
+              id="city"
+              src="assets\fons-heijnsbroek-32iIbKsaV94-unsplash.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+        </div>
+      </div>
+      <hr id="line" />
+      <h1>SLIDING IMAGES</h1>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              id="img-slide"
+              src="assets\joel-herzog-ny_5l4QKBnE-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              id="img-slide"
+              src="assets\karsten-wurth-drdj51vHFkg-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              id="img-slide"
+              src="assets\urban-vintage-78A265wPiO4-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              id="img-slide"
+              src="assets\igor-shalyminov-uob33Quh9bY-unsplash.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <footer class="foota">&COPY;LEON</footer>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="jquery-3.7.1.min.js"></script>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>

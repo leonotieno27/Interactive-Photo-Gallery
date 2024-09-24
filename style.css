@@ -1,0 +1,72 @@
+* {
+    text-align: center;
+    align-items: center;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+
+}
+
+.pad-width {
+    padding-top: 20px;
+}
+
+#line {
+    width: 80%;
+}
+.swiper {
+    height: 500px;
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+#img-slide{
+    width: fit-content;
+    height: 500px;
+}
+
+.images:hover{
+    transform: scale(0.8) rotate(-45deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+#btn-reset{
+    float: right;
+}
+#reset{
+    color: black;
+    height: 30px;
+    background-color: white;
+    font-weight: bold;
+}
+
+#check-value{
+    color: black;
+    height: 30px;
+    background-color: white;
+    font-weight: bold;
+}
+
+#box{
+    padding-top: 15px;
+}
+.foota{
+    padding: 20px;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+        transform: translateY(-4rem) scale(.8);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
